@@ -1,0 +1,696 @@
+#main-wrapper {
+  left: 240px;
+  top: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px 22px;
+  overflow: auto;
+  background-color: #f1f5f8;
+}
+#left-menu {
+  .icon-toggle {
+    position: absolute;
+    right: 10px;
+    color: white;
+    top: 8px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+}
+
+.toggle-selected {
+  width: 45px !important;
+  & .title-menu {
+    display: none !important;
+  }
+  & .menus {
+    top: 30px !important;
+    & .down-up-icon {
+      right: 5px !important;
+    }
+    & li a {
+      padding: 25px 10px 10px 34px !important;
+    }
+    & .menu-icon {
+      top: 10px;
+    }
+    & .menu-icon-2 {
+      left: 0 !important;
+    }
+  }
+
+  & .icon-toggle {
+    right: 18px !important;
+  }
+}
+.toggle-dashboard-wrapper {
+  & .danh-sach-nhiem-vu {
+    .hide-menu {
+      display: block !important;
+    }
+    & .over-view-nhiem-vu {
+      display: none;
+    }
+    & .filter-search {
+      display: none;
+    }
+  }
+}
+
+.toggle-main-wrapper {
+  & #main-wrapper {
+    left: 45px !important;
+  }
+  & .version {
+    display: none;
+  }
+}
+
+#overlay-common {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 98;
+  display: none;
+}
+
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.custom-datepicker {
+  box-sizing: border-box;
+  width: 100% !important;
+  display: initial !important;
+
+  input {
+    border-radius: 4px;
+    box-shadow: none;
+    height: 36px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c9cdcf;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    overflow: visible;
+
+    &:disabled {
+      background-color: #e9ecef !important;
+      color: #8e8e8e !important;
+    }
+  }
+}
+
+.mx-datepicker-main {
+  .mx-datepicker-body {
+    .mx-table {
+      tr {
+        th {
+          background: #ffffff !important;
+          color: #73879c !important;
+        }
+      }
+    }
+  }
+}
+
+.arrow-down {
+  border: solid #2a6ebb;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.multiselect--disabled {
+  opacity: 1 !important;
+  .multiselect__tags {
+    background-color: #e9ecef;
+    opacity: 1;
+    .multiselect__single {
+      background-color: #e9ecef;
+      opacity: 1;
+    }
+  }
+}
+
+.custom-control-input[disabled] ~ .custom-control-label,
+.custom-control-input:disabled ~ .custom-control-label {
+  cursor: not-allowed;
+}
+
+/* padding */
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.not-allow-cursor {
+  cursor: not-allowed !important;
+}
+
+/* font-size */
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+.font-size-15 {
+  font-size: 15px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.mt-6 {
+  margin-top: 4rem;
+}
+
+/* toasted */
+.report-error-toasted {
+  &.toasted-container {
+    &.top-right {
+      top: 10px;
+      right: 20px;
+      opacity: 0.9;
+      .toasted {
+        background-color: #f89406;
+      }
+    }
+  }
+}
+
+.report-success-toasted {
+  &.toasted-container {
+    &.top-right {
+      top: 10px;
+      right: 20px;
+      opacity: 0.9;
+      .toasted {
+        background-color: #07bc0c;
+      }
+    }
+  }
+}
+
+/* header account */
+.header-account {
+  color: #000;
+  position: relative;
+  float: right;
+
+  button {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .user {
+    position: relative;
+    padding-left: 50px;
+    display: inline-block;
+    text-transform: none !important;
+
+    .avatar {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    .username {
+      font-weight: 500;
+      margin-bottom: 3px;
+      padding-top: 10px;
+      text-transform: uppercase;
+    }
+  }
+
+  .dropdown-menu {
+    z-index: 9999;
+    li {
+      .dropdown-item {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      &:focus {
+        background-color: #006e80 !important;
+      }
+    }
+  }
+}
+/* custom vue overlay-loading */
+.vld-overlay {
+  z-index: 10 !important;
+}
+/* custom vue multiselect */
+.multiselect {
+  font-size: 14px;
+  .multiselect__tags {
+    .multiselect__placeholder {
+      padding-left: 5px !important;
+      padding-top: 0 !important;
+      margin-bottom: 8px !important;
+      color: #636c72;
+    }
+    .multiselect__single {
+      padding-top: 1px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* custom date picker */
+
+.p-calendar .p-datepicker {
+  min-width: 25em !important;
+}
+
+/* custom vue table */
+th {
+  background: #1a62b3;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(26, 98, 179, 0.03);
+}
+
+/* custom vue modal bootstrap */
+.close {
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-dialog .modal-content .modal-header {
+  display: block;
+  text-align: center;
+}
+
+.modal-dialog .modal-content .modal-header .modal-title {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+
+//custom vue modal cofirm
+
+.confirm-title {
+  font-size: 1.5rem;
+  text-align: center;
+  border: none;
+}
+
+.confirm-body {
+  display: none;
+}
+
+.confirm-bottom {
+  margin: auto;
+  text-align: center;
+  border: none;
+}
+
+.invalid-error {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: #dc3545;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
+/* height */
+.height-30 {
+  height: 30px;
+}
+
+/* disabled */
+.custom-select {
+  &:disabled {
+    cursor: not-allowed !important;
+  }
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  cursor: not-allowed;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+/* custom vue toasd */
+
+.toasted-container.top-right {
+  top: 40px !important;
+}
+/* input search */
+
+.input-search {
+  &:focus {
+    box-shadow: 0 0 0 0.1rem rgb(150, 213, 219);
+  }
+}
+
+.mau-qua-han {
+  color: #e00030;
+}
+
+.mau-toi-han {
+  color: #ff7f50;
+}
+
+.btn-blue {
+  background-color: #2f80ed;
+  border: 1px solid #2f80ed !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #1b60bf !important;
+    border: 1px solid #1b60bf !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+  &:focus {
+    background-color: #1b60bf !important;
+    border: 1px solid #1b60bf !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+}
+
+.btn-orange {
+  background-color: #f2994a;
+  border: 1px solid #f2994a !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #d67d30 !important;
+    border: 1px solid #d67d30 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+  &:focus {
+    background-color: #da8336 !important;
+    border: 1px solid #da8336 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+}
+
+.btn-red {
+  background-color: #e00030;
+  border: 1px solid #e00030 !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #a00325 !important;
+    border: 1px solid #a00325 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+  &:focus {
+    background-color: #a00325 !important;
+    border: 1px solid #a00325 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+}
+
+.btn-brown {
+  background-color: #5d1919;
+  border: none !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #6e2c2c !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+  &:focus {
+    background-color: #6b3030 !important;
+    border: 1px #6b3030 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+}
+
+.btn-remove {
+  background-color: #f2994a;
+  border: 1px solid #f2994a !important;
+  color: #ffffff !important;
+  &:hover {
+    background-color: #d67d30 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+  &:focus {
+    background-color: #c47d40 !important;
+    border: 1px #c47d40 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+  }
+}
+
+.color-orange {
+  color: #f2994a;
+}
+
+.btn:disabled {
+  color: #fff !important;
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  cursor: not-allowed;
+}
+
+.border-none {
+  border: none !important;
+  &:hover {
+    border: none !important;
+  }
+  &:focus {
+    border: none !important;
+  }
+}
+
+table {
+  font-size: 14px;
+}
+
+.color-blue {
+  color: #2f80ed;
+}
+.color-range {
+  color: #ed2f2f;
+}
+
+.color-green {
+  color: #75b512;
+}
+
+.p-datatable-emptymessage {
+  td {
+    text-align: center !important;
+  }
+}
+
+.p-datatable-row {
+  td {
+    a {
+      p {
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+.vertical-align-super {
+  vertical-align: super;
+}
+
+.height-300 {
+  height: 300px;
+}
+
+.btn-nhap-lai {
+  background-color: #4c6ef5;
+  &:hover {
+    background-color: #4463dc !important;
+  }
+}
+.btn-import-nhiem-vu {
+  background-color: #f15d22;
+  &:hover {
+    background-color: #c04f22 !important;
+  }
+}
+.import-file-btn {
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin-left: 5px;
+  &.theme-list {
+    width: 100px;
+  }
+
+  div[helperclass~="active-sorting-item"] {
+    height: 0 !important;
+  }
+
+  .file-input {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    cursor: pointer !important;
+  }
+
+  .file-input + label {
+    background: #f15d22;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer !important;
+    display: inline-block;
+    font-weight: 500;
+    outline: none;
+    padding: 0.375rem 0.75rem;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    margin-bottom: 0 !important;
+    text-transform: uppercase;
+  }
+}
+
+.border-top-none {
+  border-top: 0 !important;
+}
+
+.border-bottom-none {
+  border-bottom: 0 !important;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.middle-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+}
+
+.checkbox-group * {
+  cursor: pointer;
+}
+
+.no-data-box {
+  height: 300px;
+  position: relative;
+}
+
+.no-data-text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.file-dinh-kem-div {
+  margin-top: 10px;
+  .ten-tieu-de {
+    float: left;
+  }
+}
+.name-user {
+  font-size: 13px;
+}
+.p-organizationchart-node-content {
+  min-width: 222px;
+}
+.p-organizationchart-table > tbody > tr > td {
+  padding: 0px 0.15rem !important;
+}
+
+.highcharts-container tspan {
+  font-family: Roboto, sans-serif;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.p-datatable-row {
+  span {
+    word-break: break-word;
+  }
+}
+.p-datatable-wrapper {
+  .p-inputtext {
+    border: 1px solid #ced4da !important;
+  }
+}
+.p-datatable-thead {
+  tr th {
+    border: 1px solid #ccc;
+  }
+}
+.p-datatable-thead {
+  .p-inputtext {
+    border: 1px solid #ced4da !important;
+  }
+  .p-inputtext:enabled:focus{
+    background: #fff !important;
+  }
+  tr th.p-filter-column {
+    * {
+      background-color: #e9ecef !important;
+    }
+    background-color: #e9ecef !important;
+  }
+}
+
+.p-tooltip .p-tooltip-arrow {
+  border-top-color: #fff !important;
+}
+.p-tooltip .p-tooltip-text {
+  background: #fff !important;
+  color: #000 !important;
+}

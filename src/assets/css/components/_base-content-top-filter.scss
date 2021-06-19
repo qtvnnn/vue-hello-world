@@ -1,0 +1,38 @@
+.content-top-filter {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0 3px 20px #0000000b;
+
+  .list-group {
+    flex: 1 1 auto;
+  }
+
+  .list-group-item {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 1px 0 3px #a9a2a2;
+    margin: 0 2px;
+    border-radius: 4px;
+    &.active {
+      background-color: #13559f !important;
+      margin: 0 2px !important;
+    }
+    span {
+      color: red;
+    }
+  }
+
+  @media (max-width: 991px) {
+    display: block;
+
+    .list-group-item {
+      width: 100%;
+    }
+  }
+}

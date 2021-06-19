@@ -1,0 +1,10 @@
+.breadcrumb {
+  margin-bottom: 0;
+  a {
+    color: #17a2b8;
+    font-weight: 500;
+    &:hover {
+      color: #138496;
+    }
+  }
+}

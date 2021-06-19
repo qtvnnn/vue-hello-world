@@ -1,0 +1,122 @@
+.p-column-filter {
+  max-width: 100%;
+  width: 100%;
+  border: none !important;
+  border-radius: 0 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:focus {
+    outline: none;
+    border: none !important;
+    box-shadow: 0 0 1px $color-primary-hover !important;
+  }
+}
+.p-datatable .p-datatable-tbody > tr > td, .p-datatable .p-datatable-thead > tr > th {
+  border-width: 1px !important;
+  vertical-align: middle !important;
+}
+.p-datatable .p-datatable-header {
+  border: none !important;
+}
+.p-datatable-thead th.p-filter-column {
+  padding: 0 !important;
+  background-color: #ffffff !important;
+}
+.p-datatable-thead th {
+  background: $color-gray !important;
+  color: $color-black !important;
+  text-align: center !important;
+}
+.p-datatable-row {
+  & a {
+    color: $color-black;
+    &:hover {
+      text-decoration: none;
+      color: $color-bg-menu-left;
+    }
+  }
+}
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: .5rem !important;
+}
+.p-datatable-scrollable-header-box {
+  margin: 0 !important;
+  padding-right: 4px !important;
+  background: #c9e4ea;
+}
+.header-sticky {
+  max-height: 500px !important;
+  overflow: auto;
+}
+.p-datatable-scrollable-body, .header-sticky {
+
+  &::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar
+  {
+    width: 4px;
+    height: 4px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb
+  {
+    width: 4px;
+    height: 4px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+    background-color: $color-primary;
+  }
+  .p-datatable-thead tr:first-child th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+  }
+}
+.table {
+  .p-datatable-wrapper {
+    & table {
+      display: block !important;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .an-cot-danh-sach {
+      display: none;
+    }
+  }
+  .dropdown {
+    width: 100%;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 1px $color-primary-hover !important;
+      border-color: transparent !important;
+    }
+    .p-dropdown-item.p-highlight {
+      background: $color-primary !important;
+    }
+  }
+  .over-layer {
+    background: $color-white !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.scroll-tab {
+  .p-datatable-wrapper {
+    & table {
+      display: inline-table !important;
+    }
+  }
+}

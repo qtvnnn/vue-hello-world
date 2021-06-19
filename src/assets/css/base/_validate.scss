@@ -1,0 +1,18 @@
+.is-danger {
+  border-color: #a94442 !important;
+}
+.error {
+  color: #a94442;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.invalid {
+  .multiselect__tags {
+    border-color: #a94442 !important;
+  }
+}
+.is-danger-tree-Select {
+  .vue-treeselect__control {
+    border-color: #a94442 !important;
+  }
+}

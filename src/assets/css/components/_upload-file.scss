@@ -1,0 +1,41 @@
+.vue-file-agent {
+  &.file-input-wrapper {
+    border: none !important;
+  }
+  .file-preview-new {
+    svg {
+      fill: #1A62B3 !important;
+    }
+  }
+}
+.theme-list {
+  width: 110px;
+
+  .file-preview-wrapper.grid-box-item.grid-block {
+    display: none;
+  }
+  .file-preview-wrapper.grid-box-item.grid-block.file-preview-new {
+    display: inline-block;
+  }
+  .file-preview-wrapper.grid-box-item.grid-block.file-preview-new .file-preview {
+    display: none;
+  }
+
+  .vue-file-agent {
+    .file-preview-new {
+      svg {
+        fill: #1C3FAA !important;
+      }
+      &:before {
+        background: white !important;
+      }
+      .help-text {
+        color: #1C3FAA !important;
+        font-size: 13px;
+      }
+    }
+  }
+}
+.grid-block-wrapper {
+  padding: 0 !important;
+}

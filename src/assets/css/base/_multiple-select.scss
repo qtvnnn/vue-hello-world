@@ -1,0 +1,38 @@
+.multiselect__tags {
+  border: 1px solid #ced4da !important;
+}
+.multiselect__tag {
+  background: $color-primary !important;
+}
+.multiselect__option--selected {
+  background: #f3f3f3 !important;
+  &.multiselect__option--highlight {
+    background: $color-primary !important;
+  }
+}
+.multiselect__option--highlight {
+  background: $color-primary !important;
+}
+.multiselect__tag-icon:after {
+  font-size: 20px;
+}
+
+.multiselect__element {
+  & span {
+    width: 100% !important;
+  }
+  &:hover {
+    .multiselect__option--highlight {
+      background-color: $color-primary !important;
+    }
+  }
+}
+.base-mutiple-select {
+  width: 100%;
+}
+
+.mx-input-wrapper {
+  & input {
+    height: 40px !important;
+  }
+}

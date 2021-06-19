@@ -1,0 +1,16 @@
+.tabs {
+  .nav-link {
+    color: $color-black;
+    background: #e8e8e8;
+    margin-right: 1px;
+    &:hover {
+      background: $color-bg-menu-left;
+      color: $color-white;
+    }
+  }
+  .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background: $color-bg-menu-left;
+    color: $color-white;
+    border-bottom: 1px solid #ccc;
+  }
+}
